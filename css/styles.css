@@ -1,0 +1,144 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap');
+
+/* Estilos Generales */
+body {
+    font-family: 'Marope', sans-serif;
+}
+
+.btn {
+    border-radius: 0;
+    padding: 10px 20px;
+}
+
+.bg-2 {
+    background-color: #121212;
+}
+
+.border-custom {
+    border: 1px solid #444;
+    transition: all .4s ease-in-out;
+}
+
+.border-custom:hover {
+    border-color: var(--bs-blue);
+}
+
+/* Barra de navegación */
+.navbar {
+    --bs-navbar-nav-link-padding-x: 1.2rem;
+}
+
+/* Services */
+.icon {
+    width: 60px;
+    height: 60px;
+    background-color: #555;
+    display: grid;
+    align-content: center;
+    text-align: center;
+    font-size: 32px;
+    color: white;
+    transition: all .4s ease-in-out;
+}
+
+.icon:hover {
+    background-color: var(--bs-blue);
+}
+
+.service:hover .icon {
+    background-color: var(--bs-blue);
+}
+
+/* Portfolio */
+.project {
+    overflow: hidden;
+    position: relative;
+}
+
+.project .overlay {
+    padding: 32px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all .4s ease-in-out;
+    opacity: 0;
+    transform: translateY(60px);
+}
+
+.project:hover .overlay {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.swiper-pagination-bullet {
+    background-color: white;
+}
+
+/* Testimonials */
+.review img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+
+/* Team */
+.team-member .divider {
+    background-color: #555;
+    height: 1px;
+}
+
+.team-member .links .icon {
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+    font-size: 24px;
+    color: white;
+    background-color: transparent;
+    border: 1px solid #555;
+}
+
+.team-member .links .icon:hover {
+    background-color: var(--bs-blue);
+    border-color: var(--bs-blue);
+}
+
+/* Contact */
+#contact .form-control {
+    background-color: transparent;
+    border: 1px solid #555;
+    border-radius: 0;
+    padding: 10px;
+    color: white;
+}
+
+/* Insta section */
+#insta-section {
+    position: relative;
+}
+
+#insta-section .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Footer */
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Scroll to top */
+.scroll-to-top {
+    text-decoration: none;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+}
+
+.scroll-to-top:hover {
+    color: white;
+}
